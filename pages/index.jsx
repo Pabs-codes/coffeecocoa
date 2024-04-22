@@ -33,10 +33,20 @@ export default function Home() {
             |<AboutC/>
        
           </section>
-          <section id="Product" className="scroll-mt-16 xl:scroll-mt-36">
+
+
+          
+          {/* <section id="Product" className="scroll-mt-16 xl:scroll-mt-36">
             <Product />
-          </section>
-          <section id="Service" className="scroll-mt-20">
+          </section> */}
+
+
+
+
+
+
+
+          {/* <section id="Service" className="scroll-mt-20">
             <div className="px-3 py-10 md:px-10 lg:grid lg:grid-cols-2">
               <div>
                 <h1 className="mb-16 text-4xl font-bold text-center lg:text-left">
@@ -91,8 +101,11 @@ export default function Home() {
                 </div>
               </Fade>
             </div>
-          </section>
-          <section id="Technology" className="scroll-mt-16 xl:scroll-mt-36">
+          </section> */}
+
+
+
+          {/* <section id="Technology" className="scroll-mt-16 xl:scroll-mt-36">
             <h1 className="px-3 py-10 text-5xl font-bold text-center md:px-10">
               Expertise
             </h1>
@@ -101,7 +114,10 @@ export default function Home() {
               hasil yang terbaik bagi client kami.
             </p>
             <Technology />
-          </section>
+          </section> */}
+
+
+
         </main>
         <Footer />
       </div>
