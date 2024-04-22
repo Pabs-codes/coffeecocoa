@@ -1,0 +1,158 @@
+import React from 'react';
+import Link from 'next/link';
+import MenuItems from '../../libs/MenuItems';
+import SwapTheme from '../Theme/SwapTheme';
+import Image from "next/image";
+
+
+const Navbar = ({ isVisible }) => {
+  return (
+    <>
+      {isVisible ? (
+        <nav className="fixed navbar bg-base-100 pt-5 z-30 px-5 items-center shadow-xl bg-opacity-95 backdrop-filter backdrop-blur-lg">
+          <div className="flex-1">
+            <Link href="/">
+              <a className="btn btn-ghost normal-case text-xl">
+              <Image
+            src="/logo/ceo.png"
+            alt="logo"
+            width={250}
+            priority
+            height={81}
+          />
+              </a>
+            </Link>
+          </div>
+          <div className="flex-none hidden lg:block ">
+            <ul className="menu menu-horizontal p-0">
+              <li className="space-x-5">
+                {MenuItems.map((item, index) => (
+                  <Link href={item.url} key={index} exac>
+                    <a
+                      className="transition ease-in-out delay-100 hover:text-primary"
+                      target={item.target}
+                    >
+                      {item.label}
+                    </a>
+                  </Link>
+                ))}
+              </li>
+            </ul>
+          </div>
+          <div className="ml-4">
+            {/* <SwapTheme colorFill="text-base" /> */}
+          </div>
+          <div className="lg:hidden block ml-4">
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  className="inline-block w-5 h-5 stroke-current"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li className="space-y-3">
+                  {MenuItems.map((item, index) => (
+                    <Link href={item.url} key={index} exac>
+                      <a
+                        className="transition ease-in-out delay-100 hover:text-success"
+                        target={item.target}
+                      >
+                        {item.label}
+                      </a>
+                    </Link>
+                  ))}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      ) : (
+        <nav className="fixed z-30 items-center pt-5 navbar px-5">
+          <div className="flex-1  ">
+            <a className="btn btn-ghost normal-case text-xl text-white">
+       
+              <Image
+            src="/logo/ceo.png"
+            alt="logo"
+            width={200}
+            priority
+            height={65}
+          />
+
+            </a>
+          </div>
+          <div className="flex-none hidden lg:block  mr-20">
+            <ul className="menu menu-horizontal p-0">
+              <li className="space-x-5">
+                {MenuItems.map((item, index) => (
+                  <Link href={item.url} key={index} exac>
+                    <a
+                      className="transition text-white ease-in-out delay-100 hover:text-primary"
+                      target={item.target}
+                    >
+                      {item.label}
+                    </a>
+                  </Link>
+                ))}
+              </li>
+            </ul>
+          </div>
+          <div className="ml-4">
+            {/* <SwapTheme colorFill="text-white" /> */}
+          </div>
+          <div className="lg:hidden block ml-4">
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="btn btn-ghost btn-circle text-white">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  className="inline-block w-5 h-5 stroke-current"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li className="space-y-3">
+                  {MenuItems.map((item, index) => (
+                    <Link href={item.url} key={index} exac>
+                      <a
+                        className="transition ease-in-out delay-100 hover:text-success"
+                        target={item.target}
+                      >
+                        {item.label}
+                      </a>
+                    </Link>
+                  ))}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      )}
+    </>
+  );
+};
+
+export default Navbar;
