@@ -10,7 +10,7 @@ const MenuItems = [
     },
     {
         label: ' Our Origins',
-        url: '/#AboutUs',
+        url: '#Ourorigins',
         active: true,
         target: '',
     },
