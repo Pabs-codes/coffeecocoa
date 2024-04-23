@@ -58,7 +58,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="ml-4">
-            <SwapTheme colorFill="text-base" />
+            {/* <SwapTheme colorFill="text-base" /> */}
           </div>
           <div className="lg:hidden block ml-4">
             <div className="dropdown dropdown-end">
@@ -131,7 +131,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="ml-4">
-            <SwapTheme colorFill="text-white" />
+            {/* <SwapTheme colorFill="text-white" /> */}
           </div>
           <div className="lg:hidden block ml-4">
             <div className="dropdown dropdown-end">
