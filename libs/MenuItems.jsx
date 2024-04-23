@@ -10,13 +10,13 @@ const MenuItems = [
     },
     {
         label: ' Our Origins',
-        url: '#Ourorigins',
+        url: '/org',
         active: true,
         target: '',
     },
     {
         label: 'About Us',
-        url: '/#Product',
+        url: '/org',
         active: true,
         target: '',
     },
@@ -34,7 +34,7 @@ const MenuItems = [
     // },
     {
         label: '   Contact Us',
-        url: '/#Kontak',
+        url: '/org',
         active: true,
         target: '',
     },
