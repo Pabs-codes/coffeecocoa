@@ -27,15 +27,15 @@ const Navbar = () => {
   return (
     <>
       {isVisible ? (
-        <nav className="fixed navbar bg-base-100 pt-5 z-30 px-5 items-center shadow-xl bg-opacity-95 backdrop-filter backdrop-blur-lg">
+        <nav className="fixed navbar bg-base-100 pt-5 pb-6 z-30 px-5 items-center shadow-xl bg-opacity-95 backdrop-filter backdrop-blur-lg">
           <div className="flex-1">
             <a className="btn btn-ghost normal-case text-xl">
             <Image
-            src="/logo/ceo.png"
+            src="/logo/logodark.png"
             alt="logo"
-            width={250}
+            width={200}
             priority
-            height={81}
+            height={65}
           />
             </a>
           </div>
@@ -104,11 +104,11 @@ const Navbar = () => {
           <div className="flex-1">
             <a className="btn btn-ghost normal-case text-xl text-white">
             <Image
-            src="/logo/ceo.png"
+            src="/logo/logolight.png"
             alt="logo"
-            width={250}
+            width={200}
             priority
-            height={81}
+            height={65}
           />
             </a>
           </div>

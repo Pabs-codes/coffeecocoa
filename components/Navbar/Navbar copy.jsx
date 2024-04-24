@@ -98,7 +98,7 @@ const Navbar = () => {
           </div>
         </nav>
       ) : (
-        <nav className="fixed z-30 items-center pt-5 navbar px-5">
+        <nav className="fixed z-30 items-center pt-4 navbar px-5">
           <div className="flex-1  ">
             <a className="btn btn-ghost normal-case text-xl text-white">
        
